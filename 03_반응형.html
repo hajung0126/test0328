@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형</title>
+
+    <link rel="stylesheet" href="lib/fullpage.min.css">
+    <script src="lib/fullpage.min.js"></script>
+
+    <script>
+        window.onload = () => {
+            var myFullpage = new fullpage('#fullpage', {
+                sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+                anchors: ['first', 'second', '3rd'],
+                navigation: true,
+                navigationTooltips: ['첫번째', '두번째', '세번째'],
+                showActiveTooltip: true,
+                navigationPosition: 'left', /* 기본은 오른쪽 배치 */
+                menu: '#menu',
+                responsiveWidth: 900, /* 900보다 작아지면 스크롤바가 생김 */
+            });
+
+        };  //scritp end
+    </script>
+</head>
+
+<body>
+    <div id="fullpage">
+        <section class="section" id="section1">
+            <div class="intro">
+                <h1>Section 1</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In dolores totam, minus neque assumenda sint
+                    porro placeat commodi architecto a corrupti suscipit pariatur dolorum culpa sunt facilis illum nam
+                    ullam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In dolores totam, minus neque assumenda sint
+                    porro placeat commodi architecto a corrupti suscipit pariatur dolorum culpa sunt facilis illum nam
+                    ullam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In dolores totam, minus neque assumenda sint
+                    porro placeat commodi architecto a corrupti suscipit pariatur dolorum culpa sunt facilis illum nam
+                    ullam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In dolores totam, minus neque assumenda sint
+                    porro placeat commodi architecto a corrupti suscipit pariatur dolorum culpa sunt facilis illum nam
+                    ullam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In dolores totam, minus neque assumenda sint
+                    porro placeat commodi architecto a corrupti suscipit pariatur dolorum culpa sunt facilis illum nam
+                    ullam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In dolores totam, minus neque assumenda sint
+                    porro placeat commodi architecto a corrupti suscipit pariatur dolorum culpa sunt facilis illum nam
+                    ullam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In dolores totam, minus neque assumenda sint
+                    porro placeat commodi architecto a corrupti suscipit pariatur dolorum culpa sunt facilis illum nam
+                    ullam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In dolores totam, minus neque assumenda sint
+                    porro placeat commodi architecto a corrupti suscipit pariatur dolorum culpa sunt facilis illum nam
+                    ullam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In dolores totam, minus neque assumenda sint
+                    porro placeat commodi architecto a corrupti suscipit pariatur dolorum culpa sunt facilis illum nam
+                    ullam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In dolores totam, minus neque assumenda sint
+                    porro placeat commodi architecto a corrupti suscipit pariatur dolorum culpa sunt facilis illum nam
+                    ullam.</p>
+            </div><!-- intro end -->
+        </section> <!-- section1 end -->
+
+        <section class="section fp-auto-height-responsive" id="section2">
+            <h1>Section 2</h1>
+        </section><!-- section2 end -->
+
+        <section class="section" id="section3">
+            <h1>Section 3</h1>
+        </section><!-- section3 end -->
+
+    </div> <!-- fullpage end -->
+
+</body>
+
+</html>

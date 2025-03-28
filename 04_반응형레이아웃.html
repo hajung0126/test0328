@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 레이아웃</title>
+    <link rel="stylesheet" href="css/04.css">
+
+    <link rel="stylesheet" href="lib/fullpage.min.css">
+    <script src="lib/fullpage.min.js"></script>
+
+    <script>
+        window.onload = () => {
+            var myFullpage = new fullpage('#fullpage', {
+                navigation: true,
+                navigationTooltips: ['시작', '중간', '마지막'],
+                showActiveTooltip: true,
+                navigationPosition: 'left', /* 기본은 오른쪽 배치 */
+                responsiveWidth: 900, /* 900보다 작아지면 스크롤바가 생김 */
+            });
+        };
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="inner">
+            <h1 class="logo">
+                <a href="#">logo</a>
+            </h1> <!-- logo end -->
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">menu1</a></li>
+                    <li><a href="#">menu2</a></li>
+                    <li><a href="#">menu3</a></li>
+                    <li><a href="#">menu4</a></li>
+                    <li><a href="#">menu5</a></li>
+                </ul>
+            </nav>
+        </div><!-- inner end -->
+
+    </header> <!-- header end -->
+
+    <div id="fullpage">
+        <div class="section fp-auto-height-responsive" id="section1">
+            <div class="inner">
+                <div class="item_wrap">
+                    <div class="item">
+                        <a href="#">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, soluta ad! Quam, 
+                                sed dolores natus impedit recusandae illum asperiores expedita tenetur culpa eos doloremque sunt voluptatibus et commodi nulla voluptate!</p>
+                        </a>
+                    </div><!-- item end -->
+
+                    <div class="item">
+                        <a href="#">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, soluta ad! Quam, 
+                                sed dolores natus impedit recusandae illum asperiores expedita tenetur culpa eos doloremque sunt voluptatibus et commodi nulla voluptate!</p>
+                        </a>
+                    </div><!-- item end -->
+
+                    <div class="item">
+                        <a href="#">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, soluta ad! Quam, 
+                                sed dolores natus impedit recusandae illum asperiores expedita tenetur culpa eos doloremque sunt voluptatibus et commodi nulla voluptate!</p>
+                        </a>
+                    </div><!-- item end -->
+
+                    <div class="item">
+                        <a href="#">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, soluta ad! Quam, 
+                                sed dolores natus impedit recusandae illum asperiores expedita tenetur culpa eos doloremque sunt voluptatibus et commodi nulla voluptate!</p>
+                        </a>
+                    </div><!-- item end -->
+
+                </div><!-- iten_wrap end -->
+            </div><!-- inner end -->
+        </div><!-- section1 end -->
+
+        <div class="section" id="section2">
+        </div><!-- section2 end -->
+
+        <div class="section" id="section3">
+        </div><!-- section3 end -->
+    </div><!-- fullpage end -->
+
+</body>
+
+</html>

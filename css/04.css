@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+li {
+    list-style: none;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff7c;
+    z-index: 999;
+}
+.header .inner {
+    max-width: 1280px;
+    width: calc(100% - 32px); /* 마이너스 사이 간격 띄우기 */
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .inner .nav ul {
+    display: flex;
+    gap: 40px;
+}
+#section1 {
+    background: url('../img/community-archives-of-belleville-and-hastings-county-CI5t34uGq5Q-unsplash.jpg');
+}
+#section1 .inner {
+    max-width: 1280px;
+    width: calc(100% - 32px);
+    margin: 0 auto;
+}
+#section1 .inner .item_wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* 화면을 줄였을때 아래로 떨어지도록  */
+}
+#section1 .inner .item_wrap .item {
+    width: 24%;
+    padding: 20px;
+    background-color: #ffd147b9;
+    border-radius: 20px;
+}
+#section2 {
+    background: url('../img/peter-thomas-OkVlSheILSo-unsplash.jpg');
+}
+#section3 {
+    background: url('../img/jakob-owens-qnwN8gMaofs-unsplash.jpg');
+}
+
+@media screen and (max-width:1024px) {
+    #section1 {padding: 70px 0;}
+    #section1 .inner .item_wrap {
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+    #section1 .inner .item_wrap .item {
+        width: 49%;
+    }
+} 
+@media screen and (max-width: 480px) {
+    #section1 .inner .item_wrap .item {
+        width: 100%;
+}
+}
+/* and 앞뒤로 띄우기 */

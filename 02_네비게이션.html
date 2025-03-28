@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네비게이션</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="lib/fullpage.min.css">
+    <link rel="stylesheet" href="css/02.css">
+    <script src="lib/fullpage.min.js"></script>
+
+    <script>
+        window.onload = () => { //var는 변수
+            var myFullpage = new fullpage('#fullpage', {
+                //sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+                anchors: ['first', 'second', '3rd', 'ft'], //스크롤했을때 페이지 이름이 바뀜
+                // 앵커 이름이 아이디 이름이랑 같으면 오류남
+                navigation: true, //오른쪽의 동그라미, 제거할때 false
+                navigationTooltips: ['첫번째', '두번째', '세번째', '마지막'], //오른쪽의 동그라미에 이름붙이기 가능
+                showActiveTooltip: true, //툴팁 이름이 보이게 할것인가 false하면 마우스 댔을때만 보임
+                // menu: '#menu' //우측상단에 메뉴를 연동해서 페이지 이동할 때
+            });
+
+            var swiper = new Swiper(".swiperSection2", {
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });//스와이퍼 슬라이드
+
+        };  //scritp end
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="inner">
+            <h1 class="logo">
+                <a href="#">logo</a>
+            </h1><!-- logo end -->
+
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">menu1</a></li>
+                    <li><a href="#">menu2</a></li>
+                    <li><a href="#">menu3</a></li>
+                    <li><a href="#">menu4</a></li>
+                    <li><a href="#">menu5</a></li>
+                </ul>
+            </nav><!-- nav end -->
+        </div><!-- inner end -->
+    </header> <!-- header end -->
+    <!-- 헤더는 무조건 위에 풀페이지 위에 써야함 -->
+
+    <div id="fullpage">
+
+        <section class="section" id="section1">
+            <div class="item_wrap">
+                <div class="item">
+                    <p>1</p>
+                </div><!-- item end -->
+                <div class="item">
+                    <p>2</p>
+                </div><!-- item end -->
+                <div class="item">
+                    <p>3</p>
+                </div><!-- item end -->
+                <div class="item">
+                    <p>4</p>
+                </div><!-- item end -->
+                <div class="item">
+                    <p>5</p>
+                </div><!-- item end -->
+
+            </div><!-- item_wrap end -->
+        </section> <!-- section1 end -->
+
+        <section class="section" id="section2">
+            <!-- Swiper -->
+            <div class="swiper swiperSection2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/peter-thomas-OkVlSheILSo-unsplash.jpg" alt="">
+                    </div> <!-- swiper-slide end -->
+
+                    <div class="swiper-slide">
+                        <img src="img/lala-azizli-drD1Sb2q2cI-unsplash.jpg" alt="">
+                    </div> <!-- swiper-slide end -->
+
+                    <div class="swiper-slide">
+                        <img src="img/jakob-owens-qnwN8gMaofs-unsplash.jpg" alt="">
+                    </div> <!-- swiper-slide end -->
+                </div><!-- swiper-wrapper end -->
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div><!-- swiper swiperSection2 end -->
+        </section><!-- section2 end -->
+
+        <section class="section" id="section3">
+            <div class="item_wrap">
+                <div class="item">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus assumenda maiores nostrum dolor officia. Molestiae, sit tempore! Soluta, </p>
+                </div><!-- item end -->
+
+                <div class="item">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus assumenda maiores nostrum dolor officia. Molestiae, sit tempore! Soluta, </p>
+                </div><!-- item end -->
+
+                <div class="item">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus assumenda maiores nostrum dolor officia. Molestiae, sit tempore! Soluta, </p>
+                </div><!-- item end -->
+
+                <div class="item">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus assumenda maiores nostrum dolor officia. Molestiae, sit tempore! Soluta, </p>
+                </div><!-- item end -->
+            </div><!-- item_wrap end -->
+        </section><!-- section3 end -->
+
+        <!-- footer.section.footer#footer 작성
+         fp-auto-height추가 : 본인이 가진 만큼 줄어듦-->
+        <footer class="section footer fp-auto-height" id="footer">
+            <p>푸터</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut velit aperiam iure vitae repellendus tempora
+                quaerat unde perspiciatis,
+                illo nulla assumenda, consequuntur accusantium tenetur expedita dolorum molestiae at totam! Distinctio.
+            </p>
+        </footer><!-- #footer end -->
+    </div>
+    <!-- fullpage end -->
+</body>
+
+</html>

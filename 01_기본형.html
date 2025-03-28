@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기본형</title>
+    <link rel="stylesheet" href="lib/fullpage.min.css">
+    <!-- css랑 js랑 열리는게 다름 -->
+    <script src="lib/fullpage.min.js"></script>
+
+    <style>
+        /* #는아이디명 .은 클래스명 */
+        #section1 {
+            background: url('img/lala-azizli-drD1Sb2q2cI-unsplash.jpg') center center / cover no-repeat;
+        }
+        #section2 {
+            background: url('img/huy-phan-84Pe9HdcWtE-unsplash.jpg') center center / cover no-repeat;
+        }
+        #section3 {
+            background: url('img/community-archives-of-belleville-and-hastings-county-CI5t34uGq5Q-unsplash.jpg') center center / cover no-repeat;
+        }
+        #section4 {
+            background: url('img/jakob-owens-qnwN8gMaofs-unsplash.jpg') center center / cover no-repeat;
+        }
+    </style>
+
+    <script>
+        window.onload = () => {
+            var myFullpage = new fullpage('#fullpage', {
+                //sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
+                //스타일에서 직접 적용 예정
+            });
+        };  //scrip end
+    </script>
+</head>
+
+<body>
+    <div id="fullpage"> <!-- fullpage, section만 건들지 말기 -->
+        <section class="section active" id="section1">
+            <h1>fullPage.js</h1>
+        </section>
+        <section class="section" id="section2">
+            <div class="slide ">
+                <h1>Simple Demo</h1>
+            </div>
+            <div class="slide active">
+                <h1>Only text</h1>
+            </div>
+            <div class="slide">
+                <h1>And text</h1>
+            </div>
+            <div class="slide">
+                <h1>And more text</h1>
+            </div>
+        </section>
+        <section class="section" id="section3">
+            <h1>No wraps, no extra markup</h1>
+        </section>
+        <section class="section" id="section4">
+            <h1>Just the simplest demo ever</h1>
+        </section>
+    </div>
+    <!-- fullpage end -->
+</body>
+
+</html>
